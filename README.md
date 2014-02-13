@@ -9,4 +9,4 @@ It is an alternative to archiving, it keeps the cards visible to everyone else, 
 
 Install this `.user.js` file using Tampermonkey (for Chrome), Greasemonkey (for Firefox) or Greasekit (for Safari)
 
-Then, visit the url `https://trello.com/<TRELLO_USERNAME>/cards?Lane2&Lane3, and the cards that are in those lanes will be css-display-none-d out of existence
+Then, visit the url `https://trello.com/<TRELLO_USERNAME>/cards?Lane2&Lane3`, and the cards that are in those lanes will be css-display-none-d out of existence
