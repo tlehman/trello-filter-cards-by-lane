@@ -18,7 +18,7 @@ function cardIsInLane(lane, that) {
     var elem = $(that).children("p.list-card-position")[0];
 
     if(elem) {
-	    return !!(elem.innerText.match(lane));
+      return !!(elem.innerText.match(lane));
     }
     return false;
 }
@@ -26,8 +26,11 @@ function cardIsInLane(lane, that) {
 function filterOutCardsFromIgnoredLanes() {
    $(".list-card-container").filter(function() {
        for(var i = 0; i < lanesToIgnore.length; i++) {
-           return cardIsInLane(lanesToIgnore[i], this);
+           if(cardIsInLane(lanesToIgnore[i], this)) {
+               return 1;
+           }
        }
+       return 0;
    }).css("display", "none");
 }
 
